@@ -85,6 +85,7 @@ section#about {
 }
 
 #greeting h1 {
+	font-size: 1.7em;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -96,7 +97,7 @@ section#about {
 section#work {
 	display: block;
 	text-align: center;
-	height: 90vh;
+	height: fit-content;
 	background-color: #FFCC99;
 }
 
@@ -108,10 +109,101 @@ section#work h2 {
 
 section#contact {
 	height: 90vh;
+	text-align: center;
+	height: fit-content;
 	background-color: #FFFF99;
 }
+
+#projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	justify-items: center;
+	margin: 40px 20% 50px 20%;
+}
+
+#projects .card {
+	background-color: #fff;
+	width: 80%;
+	border: 1px solid #B1B1B1;
+	padding: 2px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+.card a {
+	text-decoration: none;
+	color: #212121;
+}
+
+.card img {
+	max-width: 100%;
+	height: auto;
+}
+
+.card span {
+	display: block;
+	margin-left: -2px;
+	margin-right: -2px;
+	padding: 6px 10px;
+	border-top: 1px solid #B1B1B1;
+}
+
+#contact #header {
+	padding-top: 50px;
+}
+
+.social {
+	display: flex;
+	flex-direction: row;
+	margin: 40px 15% 50px 15%;
+	justify-content: space-around;
+}
+
+.social .circle {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #B1B1B1;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	text-decoration: none;
+	font-size: 1.1rem;
+	color: #FF7721;
+}
+
 
 /*---------footer---------*/
 footer {
 	background: 
+}
+
+
+/*---------media queries---------*/
+
+@media (max-width:1000px) {
+
+	.social {
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	.social .circle {
+		width: 100px;
+		height: 100px;
+		font-size: 1rem;
+		line-height: 100px;
+	}
+}
+
+@media (max-width:600px) {
+
+	.social {
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+	.social .circle {
+		width: 60px;
+		height: 60px;
+		font-size: 0.6rem;
+		line-height: 60px;
+	}
 }
