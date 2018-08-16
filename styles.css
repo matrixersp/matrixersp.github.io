@@ -33,14 +33,16 @@ nav {
 	width: 75%;
 	text-align: right;
 	padding-bottom: 10px;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
 }
 
 #brand  {
 	/*background: seagreen;*/
 	width: 25%;
 	padding: 0 0 10px 20px;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
 }
 
 .links li {
@@ -54,7 +56,7 @@ nav {
 
 
 nav a {
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 nav a:hover, nav #brand:hover {
@@ -96,22 +98,117 @@ section#about {
 section#work {
 	display: block;
 	text-align: center;
-	height: 90vh;
+	height: fit-content;
 	background-color: #FFCC99;
 }
 
 section#work h2 {
 	margin: 0 auto;
 	padding-top: 50px;
-	font-family: 'Quicksand', Sans-serif;
 }
 
 section#contact {
 	height: 90vh;
+	text-align: center;
+	height: fit-content;
 	background-color: #FFFF99;
 }
+
+
+#projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	justify-items: center;
+	margin: 40px 20% 50px 20%;
+}
+
+#projects .card {
+	background-color: #fff;
+	width: 80%;
+	border: 1px solid #B1B1B1;
+	padding: 2px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+.card a {
+	text-decoration: none;
+	color: #212121;
+}
+
+.card img {
+	max-width: 100%;
+	height: auto;
+}
+
+.card span {
+	display: block;
+	margin-left: -2px;
+	margin-right: -2px;
+	padding: 6px 10px;
+	border-top: 1px solid #B1B1B1;
+}
+
+#contact #header {
+	padding-top: 50px;
+}
+
+.social {
+	background-color: yellow;
+	margin: 40px 15% 50px 15%;
+}
+
+.social .circle {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #B1B1B1;
+	border-radius: 50%;
+	line-height: 100px;
+	text-decoration: none;
+	color: #FF7721;
+	margin: 10px 10px;
+}
+
 
 /*---------footer---------*/
 footer {
 	background: 
+}
+
+
+/*---------media queries---------*/
+
+@media (max-width:1000px) {
+	body {
+		font-size: 80%;
+	}
+	.social {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+@media (max-width:600px) {
+	body {
+		font-size: 50%;
+	}
+
+	.links li {
+		margin-right: 16px;
+	}
+
+	.links {
+		font-size: 0.7rem;
+		line-height: 0.7rem;
+	}
+
+	#brand  {
+		font-size: 0.8rem;
+		line-height: 0.8rem;
+	}
+
+	#projects {
+		margin: 40px 0 50px 0;
+	}
 }
