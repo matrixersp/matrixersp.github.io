@@ -154,7 +154,6 @@ section#contact {
 }
 
 .social {
-	background-color: yellow;
 	margin: 40px 15% 50px 15%;
 }
 
@@ -194,6 +193,10 @@ footer {
 		font-size: 50%;
 	}
 
+	header, nav {
+		height: 25px;
+	}
+
 	.links li {
 		margin-right: 16px;
 	}
@@ -201,11 +204,13 @@ footer {
 	.links {
 		font-size: 0.7rem;
 		line-height: 0.7rem;
+		padding-bottom: 5px;
 	}
 
 	#brand  {
 		font-size: 0.8rem;
 		line-height: 0.8rem;
+		padding-bottom: 5px;
 	}
 
 	#projects {
