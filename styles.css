@@ -51,7 +51,7 @@ nav {
 }
 
 .nav-link, #brand {
-	color: #FF7721;
+	color: #ff7721;
 }
 
 
@@ -99,7 +99,7 @@ section#work {
 	display: block;
 	text-align: center;
 	height: fit-content;
-	background-color: #FFCC99;
+	background-color: #ffcc99;
 }
 
 section#work h2 {
@@ -111,7 +111,7 @@ section#contact {
 	height: 90vh;
 	text-align: center;
 	height: fit-content;
-	background-color: #FFFF99;
+	background-color: #ffff99;
 }
 
 
@@ -125,7 +125,7 @@ section#contact {
 #projects .card {
 	background-color: #fff;
 	width: 80%;
-	border: 1px solid #B1B1B1;
+	border: 1px solid #b1b1b1;
 	padding: 2px;
 	border-radius: 4px;
 	margin-bottom: 30px;
@@ -146,7 +146,7 @@ section#contact {
 	margin-left: -2px;
 	margin-right: -2px;
 	padding: 6px 10px;
-	border-top: 1px solid #B1B1B1;
+	border-top: 1px solid #b1b1b1;
 }
 
 #contact #header {
@@ -161,18 +161,18 @@ section#contact {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	border: 2px solid #B1B1B1;
+	border: 2px solid #b1b1b1;
 	border-radius: 50%;
 	line-height: 100px;
 	text-decoration: none;
-	color: #FF7721;
+	color: #ff7721;
 	margin: 10px 10px;
 }
 
 
 /*---------footer---------*/
 footer {
-	background: #E1E1E1;
+	background: #e1e1e1;
 }
 
 
@@ -191,11 +191,11 @@ footer {
 	}
 
 	.links {
-		padding-bottom: 5px;
+		padding-bottom: 8px;
 	}
 
 	#brand  {
-		padding-bottom: 5px;
+		padding-bottom: 8px;
 	}
 
 	#projects {
@@ -204,5 +204,19 @@ footer {
 }
 
 @media (max-width:480px) {
+	.links {
+		width: 80%;
+	}
 
+	#brand  {
+		width: 20%;
+		padding: 0 0 8px 10px;
+		font-size: 1.4rem;
+		line-height: 1.4rem;
+	}
+	.links li {
+		font-size: 1.1rem;
+		line-height: 1.1rem;
+		margin-right: 10px;
+	}
 }
