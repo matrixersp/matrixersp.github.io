@@ -172,48 +172,37 @@ section#contact {
 
 /*---------footer---------*/
 footer {
-	background: 
+	background: #E1E1E1;
 }
 
 
 /*---------media queries---------*/
 
-@media (max-width:1000px) {
-	body {
-		font-size: 80%;
-	}
+@media (max-width:992px) {
 	.social {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
 }
 
-@media (max-width:600px) {
-	body {
-		font-size: 50%;
-	}
-
-	header, nav {
-		height: 25px;
-	}
-
+@media (max-width:768px) {
 	.links li {
 		margin-right: 16px;
 	}
 
 	.links {
-		font-size: 0.7rem;
-		line-height: 0.7rem;
 		padding-bottom: 5px;
 	}
 
 	#brand  {
-		font-size: 0.8rem;
-		line-height: 0.8rem;
 		padding-bottom: 5px;
 	}
 
 	#projects {
 		margin: 40px 0 50px 0;
 	}
+}
+
+@media (max-width:480px) {
+
 }
